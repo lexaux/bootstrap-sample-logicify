@@ -5897,8 +5897,8 @@ button.close {
 .panel-body:after,
 .modal-footer:before,
 .modal-footer:after,
-.my-dashboard:before,
-.my-dashboard:after,
+.my-menu:before,
+.my-menu:after,
 .my-dashboard:before,
 .my-dashboard:after {
   content: " ";
@@ -5919,7 +5919,7 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-footer:after,
-.my-dashboard:after,
+.my-menu:after,
 .my-dashboard:after {
   clear: both;
 }
@@ -6277,27 +6277,24 @@ fieldset[disabled] .my-btn.my-btn-submit.active {
   color: #428bca;
   background-color: #ffffff;
 }
+.my-menu {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-align: center;
+  margin: 8px 0;
+  font-size: 36px;
+}
+.my-menu div.glyphicon {
+  cursor: pointer;
+}
+.my-menu div.glyphicon:hover {
+  color: #428bca;
+}
 .my-dashboard {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: -15px;
   margin-right: -15px;
 }
-.my-dashboard > .navbar-header,
-.my-dashboard > .navbar-collapse {
-  margin-right: -15px;
-  margin-left: -15px;
-}
-@media (min-width: 768px) {
-  .my-dashboard > .navbar-header,
-  .my-dashboard > .navbar-collapse {
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-.my-dashboard .my-widget-column {
+.my-dashboard .my-widget-container {
   float: left;
   width: 100%;
   position: relative;
@@ -6306,43 +6303,43 @@ fieldset[disabled] .my-btn.my-btn-submit.active {
   padding-right: 15px;
 }
 @media (min-width: 992px) {
-  .my-dashboard .my-widget-column {
+  .my-dashboard .my-widget-container {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .my-dashboard .my-widget-column {
+  .my-dashboard .my-widget-container {
     float: left;
     width: 33.33333333%;
   }
 }
-.my-dashboard .my-widget-column .my-widget {
+.my-dashboard .my-widget {
   border: 1px solid #333333;
   margin-top: 16px;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header {
+.my-dashboard .my-widget .my-widget-header {
   font-size: 18px;
   padding: 8px;
   background: #eeeeee;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header:before,
-.my-dashboard .my-widget-column .my-widget .my-widget-header:after {
+.my-dashboard .my-widget .my-widget-header:before,
+.my-dashboard .my-widget .my-widget-header:after {
   content: " ";
   display: table;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header:after {
+.my-dashboard .my-widget .my-widget-header:after {
   clear: both;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header:before,
-.my-dashboard .my-widget-column .my-widget .my-widget-header:after {
+.my-dashboard .my-widget .my-widget-header:before,
+.my-dashboard .my-widget .my-widget-header:after {
   content: " ";
   display: table;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header:after {
+.my-dashboard .my-widget .my-widget-header:after {
   clear: both;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header .menu-button {
+.my-dashboard .my-widget .my-widget-header .menu-button {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -6354,10 +6351,10 @@ fieldset[disabled] .my-btn.my-btn-submit.active {
   -moz-osx-font-smoothing: grayscale;
   float: right !important;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header .menu-button:before {
+.my-dashboard .my-widget .my-widget-header .menu-button:before {
   content: "\e056";
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header .close-button {
+.my-dashboard .my-widget .my-widget-header .close-button {
   position: relative;
   top: 1px;
   display: inline-block;
@@ -6369,35 +6366,35 @@ fieldset[disabled] .my-btn.my-btn-submit.active {
   -moz-osx-font-smoothing: grayscale;
   float: right !important;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header .close-button:before {
+.my-dashboard .my-widget .my-widget-header .close-button:before {
   content: "\e014";
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-header .header-text {
+.my-dashboard .my-widget .my-widget-header .header-text {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   margin-right: 24px;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content {
+.my-dashboard .my-widget .my-widget-content {
   padding: 8px;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content:before,
-.my-dashboard .my-widget-column .my-widget .my-widget-content:after {
+.my-dashboard .my-widget .my-widget-content:before,
+.my-dashboard .my-widget .my-widget-content:after {
   content: " ";
   display: table;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content:after {
+.my-dashboard .my-widget .my-widget-content:after {
   clear: both;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content:before,
-.my-dashboard .my-widget-column .my-widget .my-widget-content:after {
+.my-dashboard .my-widget .my-widget-content:before,
+.my-dashboard .my-widget .my-widget-content:after {
   content: " ";
   display: table;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content:after {
+.my-dashboard .my-widget .my-widget-content:after {
   clear: both;
 }
-.my-dashboard .my-widget-column .my-widget .my-widget-content .my-widget-snippet-image {
+.my-dashboard .my-widget .my-widget-content .my-widget-snippet-image {
   display: block;
   width: 100% \9;
   max-width: 100%;

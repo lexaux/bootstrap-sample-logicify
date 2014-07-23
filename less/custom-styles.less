@@ -30,59 +30,72 @@ ul {
   }
 }
 
+.my-menu {
+  .make-row();
+  .text-center;
+  margin: @padding-small 0;
+  font-size: @font-size-h1;
+
+  div.glyphicon {
+    cursor: pointer;
+    &:hover {
+      color: @brand-primary;
+    }
+  }
+}
+
 .my-dashboard {
-  .container-fluid;
   .make-row();
 
-  .my-widget-column {
+  .my-widget-container {
     .make-xs-column(12);
     .make-md-column(6);
     .make-lg-column(4);
+  }
+  .my-widget {
+    border: 1px solid @gray-dark;
+    margin-top: @padding-large;
 
-    .my-widget {
-      border: 1px solid @gray-dark;
-      margin-top: @padding-large;
+    .my-widget-header {
+      font-size: @font-size-h4;
+      padding: @padding-small;
+      background: @gray-lighter;
+      .clearfix;
 
-      .my-widget-header {
-        font-size: @font-size-h4;
-        padding: @padding-small;
-        background: @gray-lighter;
-        .clearfix;
-
-        .menu-button {
-          .glyphicon;
-          .glyphicon-list;
-          .pull-right;
-        }
-
-        // the button which would have closed the widget
-        .close-button {
-          .glyphicon;
-          .glyphicon-remove;
-          .pull-right;
-        }
-
-        //      Text in header
-        .header-text {
-          text-overflow: ellipsis;
-          overflow: hidden;
-          white-space: nowrap;
-          margin-right: 24px;
-        }
+      .menu-button {
+        .glyphicon;
+        .glyphicon-list;
+        .pull-right;
       }
-      .my-widget-content {
-        .clearfix();
+
+      // the button which would have closed the widget
+      .close-button {
+        .glyphicon;
+        .glyphicon-remove;
+        .pull-right;
+      }
+
+      //      Text in header
+      .header-text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-right: 24px;
+      }
+    }
+    .my-widget-content {
+      .clearfix();
+      padding: @padding-small;
+
+      .my-widget-snippet-image {
+        .img-responsive;
+        .pull-left;
         padding: @padding-small;
-
-        .my-widget-snippet-image {
-          .img-responsive;
-          .pull-left;
-          padding: @padding-small;
-        }
-
       }
 
     }
+
   }
+  //  }
 }
 
