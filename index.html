@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap 101 Template</title>
 
-    <!-- Bootstrap -->
-    <link href="./lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <!--Our own styles-->
-    <link href="./css/custom-styles.css">
+    <link href="./css/style.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/14.2/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -25,9 +23,72 @@
 <script src="./lib/bootstrap/dist/js/bootstrap.js"></script>
 
 
-<div class="row">
-    <button class="btn btn-danger col-md-3">Something!</button>
-    <h1 class="col-md-9">Hello, world!</h1>
+<div class="my-dashboard">
+
+    <div class="my-widget-column">
+        <div class="my-widget">
+            <div class="my-widget-header">
+                <div class="close-button" data-toggle="collapse" data-target=".my-widget-content:first"></div>
+                <div class="menu-button"></div>
+
+                <div class="header-text">Interactive Space Station Reference Guide</div>
+            </div>
+            <div class="my-widget-content">
+                The first humans who will step foot on Mars are walking the Earth today. It was 45 years ago that Neil
+                Armstrong took the small step onto the surface of the moon. We stand on a new horizon, poised to take
+                the
+                next giant leap—deeper into the solar system. As we develop and test new tools of 21st century
+                spaceflight
+                on the human Path to Mars, we once again will change the course of history.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="my-widget-column">
+        <div class="my-widget">
+            <div class="my-widget-header">
+                <div class="close-button" data-target=".my-widget-content:first"></div>
+                <div class="menu-button"></div>
+
+                <div class="header-text">SLS Engine Test</div>
+            </div>
+            <div class="my-widget-content">
+                <img class="my-widget-snippet-image"
+                     src="http://www.nasa.gov/sites/default/files/styles/360x225/public/thumbnails/image/next-giant-leap-notext.jpg?itok=GzZWC5sr"/>
+                Etiam accumsan elit nunc, bibendum consectetur tortor sollicitudin sit amet. Nunc sit amet purus eu
+                metus
+                viverra placerat. Pellentesque at ultrices est. Vestibulum accumsan lacus quis erat porta, sit amet
+                faucibus
+                sem auctor. Morbi vel dapibus dolor, quis bibendum tellus. Suspendisse vel viverra elit. Ut elementum
+                est
+                lacus, ut bibendum libero semper ac. Vivamus auctor dui non mollis convallis. Sed nec luctus lorem.
+                Curabitur vitae nisl metus. Nulla facilisi. Duis adipiscing tristique dolor. Proin placerat est a tempus
+                sodales. Sed risus nibh, fermentum nec mi eu, consectetur fermentum arcu.
+            </div>
+
+        </div>
+    </div>
+
+    <div class="my-widget-column">
+        <div class="my-widget">
+            <div class="my-widget-header">
+                <div class="close-button"></div>
+                <div class="menu-button"></div>
+                <div class="header-text">45 Years After Apollo, NASA's Next Giant Leap</div>
+            </div>
+            <div class="my-widget-content">
+                Hello this is working out!. Today we're offering a poll for you:
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+                <button class="my-btn my-btn-submit">Take part in poll</button>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
